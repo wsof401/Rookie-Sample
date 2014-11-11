@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5G4-WU-Og8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="5G4-WU-Og8">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="83" id="Oiy-cx-JLU" customClass="WuTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomLabelDynamic" rowHeight="83" id="Oiy-cx-JLU" customClass="WuTableViewCell">
                                         <rect key="frame" x="0.0" y="86" width="320" height="61"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oiy-cx-JLU" id="W59-7K-83A">
@@ -36,14 +36,14 @@
                                                 <userLayoutGuide location="59" affinity="minY"/>
                                             </userGuides>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="McI-Op-Yx1">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="McI-Op-Yx1" customClass="CustomAutoLayoutLabel">
                                                     <rect key="frame" x="66" y="8" width="526" height="45"/>
                                                     <color key="backgroundColor" red="1" green="0.76533362689999995" blue="0.63568387459999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VJK-fF-hFJ">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VJK-fF-hFJ" customClass="CustomAutoLayoutLabel">
                                                     <rect key="frame" x="66" y="61" width="526" height="13.5"/>
                                                     <color key="backgroundColor" red="0.31372549020000001" green="0.74901960779999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -94,6 +94,36 @@
                                         <connections>
                                             <outlet property="detaiLabel" destination="McI-Op-Yx1" id="a7p-U2-Z9g"/>
                                             <outlet property="signLabel" destination="VJK-fF-hFJ" id="vK9-9V-Lfa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTextViewDynamic" rowHeight="85" id="wTB-AE-Ak2" customClass="WuTextViewTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTB-AE-Ak2" id="LD5-fv-z7Q">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="584" placeholderIntrinsicHeight="66.5" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="vGB-BP-RjO" customClass="CustomAutoLayoutTextView">
+                                                    <rect key="frame" x="8" y="8" width="584" height="68.5"/>
+                                                    <color key="backgroundColor" red="1" green="0.76533362689999995" blue="0.63568387459999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="displayBoundsFitContents" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="expectedDisplayWidth">
+                                                            <real key="value" value="200"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vGB-BP-RjO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LD5-fv-z7Q" secondAttribute="leading" constant="8" id="Ueq-fB-9Lp"/>
+                                                <constraint firstAttribute="bottom" secondItem="vGB-BP-RjO" secondAttribute="bottom" constant="8" id="c0C-YZ-RGP"/>
+                                                <constraint firstItem="vGB-BP-RjO" firstAttribute="top" secondItem="LD5-fv-z7Q" secondAttribute="top" constant="8" id="uhA-5m-666"/>
+                                                <constraint firstAttribute="trailing" secondItem="vGB-BP-RjO" secondAttribute="trailing" constant="8" id="y1f-LH-T8R"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textView" destination="vGB-BP-RjO" id="LyB-uN-t3g"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

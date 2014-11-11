@@ -10,21 +10,10 @@
 
 @implementation WuTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
-- (void)layoutSubviews{
-    [super layoutSubviews];
-
-    self.detaiLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.detaiLabel.frame);
-
+- (void)configWithDataDetail:(id)detai signFont:(id)font{
+    self.detaiLabel.text = detai;
+    self.signLabel.text = @"Steve-Jobs";
+    self.signLabel.font = [UIFont fontWithName:font size:14.0f];
 }
 
 @end

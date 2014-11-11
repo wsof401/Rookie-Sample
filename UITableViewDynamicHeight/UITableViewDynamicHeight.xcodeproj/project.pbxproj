@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD97104A1A122A1700F00312 /* CustomAutoLayoutLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9710491A122A1700F00312 /* CustomAutoLayoutLabel.m */; };
+		FD97104D1A122B1600F00312 /* CustomAutoLayoutTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD97104C1A122B1600F00312 /* CustomAutoLayoutTextView.m */; };
+		FD9710501A12355E00F00312 /* WuTextViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD97104F1A12355E00F00312 /* WuTextViewTableViewCell.m */; };
 		FDAA2EE01A10A5D30052865B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAA2EDF1A10A5D30052865B /* main.m */; };
 		FDAA2EE31A10A5D30052865B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAA2EE21A10A5D30052865B /* AppDelegate.m */; };
 		FDAA2EE61A10A5D30052865B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDAA2EE51A10A5D30052865B /* ViewController.m */; };
@@ -29,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD9710481A122A1700F00312 /* CustomAutoLayoutLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAutoLayoutLabel.h; sourceTree = "<group>"; };
+		FD9710491A122A1700F00312 /* CustomAutoLayoutLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAutoLayoutLabel.m; sourceTree = "<group>"; };
+		FD97104B1A122B1600F00312 /* CustomAutoLayoutTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAutoLayoutTextView.h; sourceTree = "<group>"; };
+		FD97104C1A122B1600F00312 /* CustomAutoLayoutTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAutoLayoutTextView.m; sourceTree = "<group>"; };
+		FD97104E1A12355E00F00312 /* WuTextViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuTextViewTableViewCell.h; sourceTree = "<group>"; };
+		FD97104F1A12355E00F00312 /* WuTextViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuTextViewTableViewCell.m; sourceTree = "<group>"; };
 		FDAA2EDA1A10A5D30052865B /* UITableViewDynamicHeight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewDynamicHeight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAA2EDE1A10A5D30052865B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDAA2EDF1A10A5D30052865B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,10 +98,16 @@
 				FDAA2F031A10A61C0052865B /* creature1@2x.png */,
 				FDAA2F041A10A61C0052865B /* WuTableViewCell.h */,
 				FDAA2F051A10A61C0052865B /* WuTableViewCell.m */,
+				FD97104E1A12355E00F00312 /* WuTextViewTableViewCell.h */,
+				FD97104F1A12355E00F00312 /* WuTextViewTableViewCell.m */,
 				FDAA2EE11A10A5D30052865B /* AppDelegate.h */,
 				FDAA2EE21A10A5D30052865B /* AppDelegate.m */,
 				FDAA2EE41A10A5D30052865B /* ViewController.h */,
 				FDAA2EE51A10A5D30052865B /* ViewController.m */,
+				FD9710481A122A1700F00312 /* CustomAutoLayoutLabel.h */,
+				FD9710491A122A1700F00312 /* CustomAutoLayoutLabel.m */,
+				FD97104B1A122B1600F00312 /* CustomAutoLayoutTextView.h */,
+				FD97104C1A122B1600F00312 /* CustomAutoLayoutTextView.m */,
 				FDAA2EE71A10A5D30052865B /* Main.storyboard */,
 				FDAA2EEA1A10A5D30052865B /* Images.xcassets */,
 				FDAA2EEC1A10A5D30052865B /* LaunchScreen.xib */,
@@ -228,8 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD97104A1A122A1700F00312 /* CustomAutoLayoutLabel.m in Sources */,
 				FDAA2EE61A10A5D30052865B /* ViewController.m in Sources */,
 				FDAA2EE31A10A5D30052865B /* AppDelegate.m in Sources */,
+				FD97104D1A122B1600F00312 /* CustomAutoLayoutTextView.m in Sources */,
+				FD9710501A12355E00F00312 /* WuTextViewTableViewCell.m in Sources */,
 				FDAA2EE01A10A5D30052865B /* main.m in Sources */,
 				FDAA2F071A10A61C0052865B /* WuTableViewCell.m in Sources */,
 			);
@@ -355,7 +373,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = UITableViewDynamicHeight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -365,7 +385,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = UITableViewDynamicHeight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

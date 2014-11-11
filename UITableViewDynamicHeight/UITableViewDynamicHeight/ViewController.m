@@ -8,9 +8,14 @@
 
 #import "ViewController.h"
 #import "WuTableViewCell.h"
-@interface ViewController (){
-       NSMutableArray *_quoteArray;
-        NSMutableArray *_fontArray;
+#import "WuTextViewTableViewCell.h"
+
+static NSString *const kMutableLabelCellIdentifer = @"CustomLabelDynamic";
+static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
+
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>{
+    NSMutableArray *_quoteArray;
+    NSMutableArray *_fontArray;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) WuTableViewCell *customCell;
@@ -27,13 +32,18 @@
         [_fontArray addObjectsFromArray:[UIFont familyNames]];
     }
     
+    
     _quoteArray = [@[@"For the past 33 years, I have looked in the mirror every morning and asked myself: 'If today were the last day of my life, would I want to do what I am about to do today?' And whenever the answer has been 'No' for too many days in a row, I know I need to change something. -Steve Jobs",
                      
-                     @"Be a yardstick of quality. Some people aren't used to an environment where excellence is expected. - Steve Jobsadfads",
+                     @"Be ",
                      @"SteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsdone",
                      @"Innovation distinguishes between a leader and a follower. -Steve Jobs"] mutableCopy];
-
+    
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -41,64 +51,105 @@
     return [_quoteArray count];
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    switch (section) {
+        case 0:
+            return @"Label";
+            break;
+        case 1:
+            return @"TextView";
+            break;
+        default:
+            return nil;
+            break;
+    }
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    WuTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
-    
-    cell.detaiLabel.text = _quoteArray[indexPath.row];
-    
-   
-    cell.signLabel.text = @"Steve-Jobs";
-    NSString *fontName = _fontArray[indexPath.row];
-        cell.signLabel.font = [UIFont fontWithName:fontName size:17];
-    return cell;
+    switch (indexPath.section) {
+        case 0:{
+            WuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMutableLabelCellIdentifer];
+            [cell configWithDataDetail:_quoteArray[indexPath.row] signFont:_fontArray[indexPath.row]];
+            return cell;
+        }
+            break;
+        case 1:
+        {
+            WuTextViewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMutableTextViewCellIdentifer];
+            [cell configWithTextData:_quoteArray[indexPath.row]];
+            return cell;
+        }
+            break;
+        default:
+            return nil;
+            break;
+    }
     
 }
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    // Calculate a height based on a cell
-    if(!self.customCell) {
-        self.customCell = [self.tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
+    
+    UITableViewCell *cell = nil;
+    switch (indexPath.section) {
+        case 0:
+            cell = [self caculatingLabelCellAtIndexPath:indexPath];
+            break;
+        case 1:
+            cell = [self caculatingTVCelAtIndexPath:indexPath];
+            break;
+        default:
+            return 0;
+            break;
     }
-    static WuTableViewCell *cel1 = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        cel1 = [tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
-    });
-
     
-    cel1.detaiLabel.text = _quoteArray[indexPath.row];
     
-    cel1.signLabel.text = @"Steve-Jobs";
-    NSString *fontName = _fontArray[indexPath.row];
-    cel1.signLabel.font = [UIFont fontWithName:fontName size:17];
+    cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
     
-    [cel1 setNeedsUpdateConstraints];
-    [cel1 updateConstraintsIfNeeded];
     
-    cel1.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cel1.bounds));
-    
-    // Layout the cell
-    [cel1 setNeedsLayout];
-    [cel1 layoutIfNeeded];
+    [cell setNeedsLayout];
+    [cell layoutIfNeeded];
     
     // Get the height for the cell
-  
-    CGFloat height = [cel1.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     
- 
+    CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    
+    
     CGFloat separatorHeight = 1;
     
     return height + separatorHeight;
 }
 
 
+- (UITableViewCell *)caculatingLabelCellAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static WuTableViewCell *labelCell = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        labelCell = [self.tableView dequeueReusableCellWithIdentifier:kMutableLabelCellIdentifer];
+    });
+    [labelCell configWithDataDetail:_quoteArray[indexPath.row] signFont:_fontArray[indexPath.row]];
+    return labelCell;
+    
+}
+
+- (UITableViewCell *)caculatingTVCelAtIndexPath:(NSIndexPath *)indexPath{
+    static WuTextViewTableViewCell *textViewcell = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        textViewcell = [self.tableView dequeueReusableCellWithIdentifier:kMutableTextViewCellIdentifer];
+    });
+    [textViewcell configWithTextData:_quoteArray[indexPath.row]];
+    
+    return textViewcell;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return 140;
+    return 100;
     
 }
 

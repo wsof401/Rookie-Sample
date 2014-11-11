@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CustomAutoLayoutLabel.h"
 @interface WuTableViewCell : UITableViewCell
 
-@property(weak, nonatomic)IBOutlet UILabel *detaiLabel;
-@property(weak, nonatomic)IBOutlet UILabel *signLabel;
+@property(weak, nonatomic)IBOutlet CustomAutoLayoutLabel *detaiLabel;
+@property(weak, nonatomic)IBOutlet CustomAutoLayoutLabel *signLabel;
+
+- (void)configWithDataDetail:(id)detai signFont:(id)font;
 
 @end
