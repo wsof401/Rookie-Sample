@@ -102,7 +102,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wTB-AE-Ak2" id="LD5-fv-z7Q">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="584" placeholderIntrinsicHeight="66.5" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="vGB-BP-RjO" customClass="CustomAutoLayoutTextView">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="584" placeholderIntrinsicHeight="66.5" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et " translatesAutoresizingMaskIntoConstraints="NO" id="vGB-BP-RjO" customClass="CustomAutoLayoutTextView">
                                                     <rect key="frame" x="8" y="8" width="584" height="68.5"/>
                                                     <color key="backgroundColor" red="1" green="0.76533362689999995" blue="0.63568387459999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>

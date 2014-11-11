@@ -43,7 +43,7 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -114,7 +114,6 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
     [cell layoutIfNeeded];
     
     // Get the height for the cell
-    
     CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     
     
