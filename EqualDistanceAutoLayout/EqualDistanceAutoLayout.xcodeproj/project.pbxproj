@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD83D4B51A137E4C00CBF7E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD83D4B41A137E4C00CBF7E6 /* main.m */; };
+		FD83D4B81A137E4C00CBF7E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD83D4B71A137E4C00CBF7E6 /* AppDelegate.m */; };
+		FD83D4BB1A137E4C00CBF7E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD83D4BA1A137E4C00CBF7E6 /* ViewController.m */; };
+		FD83D4BE1A137E4C00CBF7E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD83D4BC1A137E4C00CBF7E6 /* Main.storyboard */; };
+		FD83D4C01A137E4C00CBF7E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD83D4BF1A137E4C00CBF7E6 /* Images.xcassets */; };
+		FD83D4C31A137E4C00CBF7E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD83D4C11A137E4C00CBF7E6 /* LaunchScreen.xib */; };
+		FD83D4CF1A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD83D4CE1A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD83D4C91A137E4C00CBF7E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD83D4A71A137E4C00CBF7E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD83D4AE1A137E4C00CBF7E6;
+			remoteInfo = EqualDistanceAutoLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD83D4AF1A137E4C00CBF7E6 /* EqualDistanceAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EqualDistanceAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD83D4B31A137E4C00CBF7E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD83D4B41A137E4C00CBF7E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD83D4B61A137E4C00CBF7E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD83D4B71A137E4C00CBF7E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD83D4B91A137E4C00CBF7E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD83D4BA1A137E4C00CBF7E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD83D4BD1A137E4C00CBF7E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD83D4BF1A137E4C00CBF7E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD83D4C21A137E4C00CBF7E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FD83D4C81A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EqualDistanceAutoLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD83D4CD1A137E4C00CBF7E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD83D4CE1A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EqualDistanceAutoLayoutTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD83D4AC1A137E4C00CBF7E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD83D4C51A137E4C00CBF7E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD83D4A61A137E4C00CBF7E6 = {
+			isa = PBXGroup;
+			children = (
+				FD83D4B11A137E4C00CBF7E6 /* EqualDistanceAutoLayout */,
+				FD83D4CB1A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests */,
+				FD83D4B01A137E4C00CBF7E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD83D4B01A137E4C00CBF7E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD83D4AF1A137E4C00CBF7E6 /* EqualDistanceAutoLayout.app */,
+				FD83D4C81A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD83D4B11A137E4C00CBF7E6 /* EqualDistanceAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				FD83D4B61A137E4C00CBF7E6 /* AppDelegate.h */,
+				FD83D4B71A137E4C00CBF7E6 /* AppDelegate.m */,
+				FD83D4B91A137E4C00CBF7E6 /* ViewController.h */,
+				FD83D4BA1A137E4C00CBF7E6 /* ViewController.m */,
+				FD83D4BC1A137E4C00CBF7E6 /* Main.storyboard */,
+				FD83D4BF1A137E4C00CBF7E6 /* Images.xcassets */,
+				FD83D4C11A137E4C00CBF7E6 /* LaunchScreen.xib */,
+				FD83D4B21A137E4C00CBF7E6 /* Supporting Files */,
+			);
+			path = EqualDistanceAutoLayout;
+			sourceTree = "<group>";
+		};
+		FD83D4B21A137E4C00CBF7E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD83D4B31A137E4C00CBF7E6 /* Info.plist */,
+				FD83D4B41A137E4C00CBF7E6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD83D4CB1A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD83D4CE1A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests.m */,
+				FD83D4CC1A137E4C00CBF7E6 /* Supporting Files */,
+			);
+			path = EqualDistanceAutoLayoutTests;
+			sourceTree = "<group>";
+		};
+		FD83D4CC1A137E4C00CBF7E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD83D4CD1A137E4C00CBF7E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD83D4AE1A137E4C00CBF7E6 /* EqualDistanceAutoLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD83D4D21A137E4C00CBF7E6 /* Build configuration list for PBXNativeTarget "EqualDistanceAutoLayout" */;
+			buildPhases = (
+				FD83D4AB1A137E4C00CBF7E6 /* Sources */,
+				FD83D4AC1A137E4C00CBF7E6 /* Frameworks */,
+				FD83D4AD1A137E4C00CBF7E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EqualDistanceAutoLayout;
+			productName = EqualDistanceAutoLayout;
+			productReference = FD83D4AF1A137E4C00CBF7E6 /* EqualDistanceAutoLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD83D4C71A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD83D4D51A137E4C00CBF7E6 /* Build configuration list for PBXNativeTarget "EqualDistanceAutoLayoutTests" */;
+			buildPhases = (
+				FD83D4C41A137E4C00CBF7E6 /* Sources */,
+				FD83D4C51A137E4C00CBF7E6 /* Frameworks */,
+				FD83D4C61A137E4C00CBF7E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD83D4CA1A137E4C00CBF7E6 /* PBXTargetDependency */,
+			);
+			name = EqualDistanceAutoLayoutTests;
+			productName = EqualDistanceAutoLayoutTests;
+			productReference = FD83D4C81A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD83D4A71A137E4C00CBF7E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = wusong;
+				TargetAttributes = {
+					FD83D4AE1A137E4C00CBF7E6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					FD83D4C71A137E4C00CBF7E6 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = FD83D4AE1A137E4C00CBF7E6;
+					};
+				};
+			};
+			buildConfigurationList = FD83D4AA1A137E4C00CBF7E6 /* Build configuration list for PBXProject "EqualDistanceAutoLayout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD83D4A61A137E4C00CBF7E6;
+			productRefGroup = FD83D4B01A137E4C00CBF7E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD83D4AE1A137E4C00CBF7E6 /* EqualDistanceAutoLayout */,
+				FD83D4C71A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD83D4AD1A137E4C00CBF7E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD83D4BE1A137E4C00CBF7E6 /* Main.storyboard in Resources */,
+				FD83D4C31A137E4C00CBF7E6 /* LaunchScreen.xib in Resources */,
+				FD83D4C01A137E4C00CBF7E6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD83D4C61A137E4C00CBF7E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD83D4AB1A137E4C00CBF7E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD83D4BB1A137E4C00CBF7E6 /* ViewController.m in Sources */,
+				FD83D4B81A137E4C00CBF7E6 /* AppDelegate.m in Sources */,
+				FD83D4B51A137E4C00CBF7E6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD83D4C41A137E4C00CBF7E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD83D4CF1A137E4C00CBF7E6 /* EqualDistanceAutoLayoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD83D4CA1A137E4C00CBF7E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD83D4AE1A137E4C00CBF7E6 /* EqualDistanceAutoLayout */;
+			targetProxy = FD83D4C91A137E4C00CBF7E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD83D4BC1A137E4C00CBF7E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD83D4BD1A137E4C00CBF7E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD83D4C11A137E4C00CBF7E6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD83D4C21A137E4C00CBF7E6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD83D4D01A137E4C00CBF7E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD83D4D11A137E4C00CBF7E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD83D4D31A137E4C00CBF7E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EqualDistanceAutoLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD83D4D41A137E4C00CBF7E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EqualDistanceAutoLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD83D4D61A137E4C00CBF7E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EqualDistanceAutoLayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EqualDistanceAutoLayout.app/EqualDistanceAutoLayout";
+			};
+			name = Debug;
+		};
+		FD83D4D71A137E4C00CBF7E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EqualDistanceAutoLayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EqualDistanceAutoLayout.app/EqualDistanceAutoLayout";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD83D4AA1A137E4C00CBF7E6 /* Build configuration list for PBXProject "EqualDistanceAutoLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD83D4D01A137E4C00CBF7E6 /* Debug */,
+				FD83D4D11A137E4C00CBF7E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD83D4D21A137E4C00CBF7E6 /* Build configuration list for PBXNativeTarget "EqualDistanceAutoLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD83D4D31A137E4C00CBF7E6 /* Debug */,
+				FD83D4D41A137E4C00CBF7E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD83D4D51A137E4C00CBF7E6 /* Build configuration list for PBXNativeTarget "EqualDistanceAutoLayoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD83D4D61A137E4C00CBF7E6 /* Debug */,
+				FD83D4D71A137E4C00CBF7E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD83D4A71A137E4C00CBF7E6 /* Project object */;
+}

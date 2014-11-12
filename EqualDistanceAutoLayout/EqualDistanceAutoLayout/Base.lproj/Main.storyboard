@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="300" affinity="minY"/>
+                            <userLayoutGuide location="302" affinity="minX"/>
+                        </userGuides>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7o-K1-43q">
+                                <rect key="frame" x="274.5" y="100" width="51.5" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.76533362689999995" blue="0.63568387459999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aKa-FE-6E6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z55-Lh-7Tm">
+                                <rect key="frame" x="274" y="290" width="51.5" height="20.5"/>
+                                <color key="backgroundColor" red="1" green="0.76533362689999995" blue="0.63568387459999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNK-gH-RJy">
+                                <rect key="frame" x="274" y="440" width="51.5" height="20.5"/>
+                                <color key="backgroundColor" red="1" green="0.76533362689999995" blue="0.63568387459999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="RNK-gH-RJy" secondAttribute="centerX" id="903-4t-DYh"/>
+                            <constraint firstItem="z55-Lh-7Tm" firstAttribute="centerY" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.5" id="AVY-af-oe2"/>
+                            <constraint firstItem="h7o-K1-43q" firstAttribute="centerY" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.25" id="byo-EZ-nQ7"/>
+                            <constraint firstAttribute="centerX" secondItem="z55-Lh-7Tm" secondAttribute="centerX" id="do4-ir-Y6t"/>
+                            <constraint firstAttribute="centerX" secondItem="h7o-K1-43q" secondAttribute="centerX" id="h5I-ep-SkI"/>
+                            <constraint firstItem="RNK-gH-RJy" firstAttribute="centerY" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.75" id="jPm-97-hzd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="co" destination="byo-EZ-nQ7" id="aOM-q2-cfT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="354"/>
+        </scene>
+    </scenes>
+</document>
