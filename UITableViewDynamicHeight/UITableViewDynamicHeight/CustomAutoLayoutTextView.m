@@ -35,8 +35,12 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    if (CGSizeEqualToSize(self.bounds.size, [self intrinsicContentSize])) return;
+    if (self.displayBoundsFitContents) {
+        if (CGSizeEqualToSize(self.bounds.size, [self intrinsicContentSize])) return;
+    }
+    
     [self invalidateIntrinsicContentSize];
+    
 }
 
 - (CGSize)intrinsicContentSize{

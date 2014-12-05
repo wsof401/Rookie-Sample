@@ -33,8 +33,10 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    if (self.preferredMaxLayoutWidth == CGRectGetWidth(self.frame)) return;
+    if (self.preferredMaxLayoutWidth == CGRectGetWidth(self.bounds)) return;
     self.preferredMaxLayoutWidth = CGRectGetWidth(self.frame);
+    
+    
 }
 
 @end
