@@ -39,6 +39,8 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
                      @"SteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsdone",
                      @"Innovation distinguishes between a leader and a follower. -Steve Jobs"] mutableCopy];
     
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(300, 0, 0, 0);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
