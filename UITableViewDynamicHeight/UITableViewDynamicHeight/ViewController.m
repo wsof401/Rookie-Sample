@@ -16,6 +16,7 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSMutableArray *_quoteArray;
     NSMutableArray *_fontArray;
+
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) WuTableViewCell *customCell;
@@ -108,16 +109,13 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
             break;
     }
     
-    
     cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
-    
     
     [cell setNeedsLayout];
     [cell layoutIfNeeded];
     
     // Get the height for the cell
     CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    
     
     CGFloat separatorHeight = 1;
     

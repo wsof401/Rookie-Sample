@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Aio-A3-Yyq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Aio-A3-Yyq">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -32,19 +32,20 @@
                                                 <userLayoutGuide location="8" affinity="minY"/>
                                                 <userLayoutGuide location="7" affinity="minX"/>
                                                 <userLayoutGuide location="76" affinity="minX"/>
-                                                <userLayoutGuide location="312" affinity="minX"/>
+                                                <userLayoutGuide location="349" affinity="minX"/>
                                                 <userLayoutGuide location="59" affinity="minY"/>
+                                                <userLayoutGuide location="72.5" affinity="minY"/>
                                             </userGuides>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="999" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="McI-Op-Yx1" customClass="CustomAutoLayoutLabel">
-                                                    <rect key="frame" x="66" y="8" width="526" height="45"/>
+                                                    <rect key="frame" x="66" y="8" width="526" height="12"/>
                                                     <color key="backgroundColor" red="1" green="0.76533362689999995" blue="0.63568387459999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VJK-fF-hFJ" customClass="CustomAutoLayoutLabel">
-                                                    <rect key="frame" x="66" y="61" width="526" height="13.5"/>
+                                                    <rect key="frame" x="66" y="28" width="526" height="13.5"/>
                                                     <color key="backgroundColor" red="0.31372549020000001" green="0.74901960779999999" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="pkH-cZ-iam"/>
@@ -79,11 +80,13 @@
                                                 <constraint firstItem="McI-Op-Yx1" firstAttribute="leading" secondItem="W59-7K-83A" secondAttribute="leading" constant="8" id="cjz-nF-Ezj"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="VJK-fF-hFJ" secondAttribute="trailing" id="dlb-ei-1i3"/>
                                                 <constraint firstItem="Wnj-Eq-DTX" firstAttribute="top" secondItem="W59-7K-83A" secondAttribute="top" constant="8" id="ew6-Z5-JdE"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Wnj-Eq-DTX" secondAttribute="bottom" constant="8" id="sKM-uT-PQi"/>
                                                 <constraint firstItem="McI-Op-Yx1" firstAttribute="leading" secondItem="W59-7K-83A" secondAttribute="leading" constant="8" id="wNB-I5-OMN"/>
-                                                <constraint firstAttribute="bottom" secondItem="VJK-fF-hFJ" secondAttribute="bottom" constant="8" id="xja-zl-RUe"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VJK-fF-hFJ" secondAttribute="bottom" constant="8" id="xja-zl-RUe"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="Pxo-Yx-XbF"/>
                                                     <exclude reference="cjz-nF-Ezj"/>
                                                     <exclude reference="wNB-I5-OMN"/>
                                                     <exclude reference="FjL-8L-Pzj"/>

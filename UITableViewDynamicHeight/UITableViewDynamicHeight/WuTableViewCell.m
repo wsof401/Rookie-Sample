@@ -13,7 +13,7 @@
 - (void)configWithDataDetail:(id)detai signFont:(id)font{
     self.detaiLabel.text = detai;
     self.signLabel.text = @"Steve-Jobs";
-    self.signLabel.font = [UIFont fontWithName:font size:14.0f];
+    self.signLabel.font = [UIFont fontWithName:font size:8.0f];
 }
 
 @end
