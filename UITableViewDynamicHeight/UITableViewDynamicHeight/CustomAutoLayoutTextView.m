@@ -30,7 +30,7 @@
 - (void)initializationConfig{
     self.translatesAutoresizingMaskIntoConstraints = NO;
     _expectedDisplayWidth = CGFLOAT_MAX;
-    _displayBoundsFitContents = NO;
+    _displayBoundsFitContents = YES;
 }
 
 - (void)layoutSubviews{

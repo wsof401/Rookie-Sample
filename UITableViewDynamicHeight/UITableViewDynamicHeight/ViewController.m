@@ -24,9 +24,9 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     
     _fontArray = [[UIFont familyNames] mutableCopy];
     for(int i = 0; i < 100; i++) {
@@ -34,14 +34,10 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
     }
     
     
-    _quoteArray = [@[@"For the past 33 years, I have looked in the mirror every morning and asked myself: 'If today were the last day of my life, would I want to do what I am about to do today?' And whenever the answer has been 'No' for too many days in a row, I know I need to change something. -Steve Jobs",
-                     
-                     @"Be ",
-                     @"SteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteve JobsSteveobsSteveJobsSteveJobsSteveJobsSteve JobsSteve JobsSteve JobsSteve JobsSteveJobsdone",
-                     @"Innovation distinguishes between a leader and a follower. -Steve Jobs"] mutableCopy];
+    _quoteArray = [@[@"Cannot find executable for CFBundle 0x7fa0b9e2c460 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)",@"1234\n12312\n11\n",@"1"] mutableCopy];
     
     
-    self.tableView.contentInset = UIEdgeInsetsMake(300, 0, 0, 0);
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -108,8 +104,9 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
             return 0;
             break;
     }
+
     
-    cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(cell.bounds));
+    cell.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), 0);
     
     [cell setNeedsLayout];
     [cell layoutIfNeeded];
@@ -117,8 +114,9 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
     // Get the height for the cell
     CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     
-    CGFloat separatorHeight = 1;
     
+    CGFloat separatorHeight = 1;
+   
     return height + separatorHeight;
 }
 
@@ -152,6 +150,10 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
     
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"test"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
