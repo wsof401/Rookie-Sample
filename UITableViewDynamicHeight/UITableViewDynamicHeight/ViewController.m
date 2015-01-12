@@ -34,7 +34,7 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
     }
     
     
-    _quoteArray = [@[@"Cannot find executable for CFBundle 0x7fa0b9e2c460 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)",@"1234\n12312\n11\n",@"1"] mutableCopy];
+    _quoteArray = [@[@"Cannot find executable for CFBundle 0x7fa0b9e2c460 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)",@"1234\n12312\n11\n",@"1",@"Cannot find executable for CFBundle 0x7fa0b9e2c460 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)",@"1234\n12312\n11\n",@"1",@"Cannot find executable for CFBundle 0x7fa0b9e2c460 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)",@"1234\n12312\n11\n",@"1",@"Cannot find executable for CFBundle 0x7fa0b9e2c460 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)",@"1234\n12312\n11\n",@"1",@"Cannot find executable for CFBundle 0x7fa0b9e2c460 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)",@"1234\n12312\n11\n",@"1",@"Cannot find executable for CFBundle 0x7fa0b9e2c460 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)",@"1234\n12312\n11\n",@"1",@"Cannot find executable for CFBundle 0x7fa0b9e2c460 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)",@"1234\n12312\n11\n",@"1"] mutableCopy];
     
     
 
@@ -70,6 +70,7 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
     switch (indexPath.section) {
         case 0:{
             WuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMutableLabelCellIdentifer];
+                cell.layoutMargins = UIEdgeInsetsMake(0, 100, 0, 100);
             [cell configWithDataDetail:_quoteArray[indexPath.row] signFont:_fontArray[indexPath.row]];
             return cell;
         }
@@ -77,6 +78,8 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
         case 1:
         {
             WuTextViewTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kMutableTextViewCellIdentifer];
+            cell.layoutMargins = UIEdgeInsetsMake(0, 100, 0, 100);
+
             [cell configWithTextData:_quoteArray[indexPath.row]];
             return cell;
         }
@@ -128,6 +131,7 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
     dispatch_once(&onceToken, ^{
         labelCell = [self.tableView dequeueReusableCellWithIdentifier:kMutableLabelCellIdentifer];
     });
+    labelCell.layoutMargins = UIEdgeInsetsMake(0, 100, 0, 100);
     [labelCell configWithDataDetail:_quoteArray[indexPath.row] signFont:_fontArray[indexPath.row]];
     return labelCell;
     
@@ -139,6 +143,7 @@ static NSString *const kMutableTextViewCellIdentifer = @"CustomTextViewDynamic";
     dispatch_once(&onceToken, ^{
         textViewcell = [self.tableView dequeueReusableCellWithIdentifier:kMutableTextViewCellIdentifer];
     });
+        textViewcell.layoutMargins = UIEdgeInsetsMake(0, 100, 0, 100);
     [textViewcell configWithTextData:_quoteArray[indexPath.row]];
     
     return textViewcell;

@@ -10,6 +10,7 @@
 
 @implementation WuTableViewCell
 
+
 - (void)configWithDataDetail:(id)detai signFont:(id)font{
     self.detaiLabel.text = detai;
     self.signLabel.text = @"Steve-Jobs";
