@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>580A2D54-2EC9-41E4-A346-9E5691BFCB59</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ScrollEdgeGradientEffectDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6E47A0BF0709E507594B132C3A1E9C2F9A4B9D17</key>
+		<string>https://github.com/wsof401/Rookie-Sample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScrollEdgeGradientEffectDemo/ScrollEdgeGradientEffectDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6E47A0BF0709E507594B132C3A1E9C2F9A4B9D17</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/wsof401/Rookie-Sample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6E47A0BF0709E507594B132C3A1E9C2F9A4B9D17</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6E47A0BF0709E507594B132C3A1E9C2F9A4B9D17</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Rookie-Sample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

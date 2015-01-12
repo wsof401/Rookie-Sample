@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 @import QuartzCore;
+
 @interface ViewController ()
 
 @property(nonatomic, strong) CAGradientLayer *gradientMastlayer;
